@@ -1,0 +1,65 @@
+Processing default (platform: https://github.com/pioarduino/platform-espressif32/releases/download/55.03.37/platform-espressif32.zip; board: esp32-c3-devkitm-1; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32-c3-devkitm-1.html
+PLATFORM: Espressif 32 (55.3.37) > Espressif ESP32-C3-DevKitM-1
+HARDWARE: ESP32C3 160MHz, 320KB RAM, 16MB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-builtin, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - contrib-piohome @ 3.4.4 
+ - framework-arduinoespressif32 @ 3.3.7 
+ - framework-arduinoespressif32-libs @ 5.5.0+sha.87912cd291 
+ - tool-esptoolpy @ 5.1.2 
+ - toolchain-riscv32-esp @ 14.2.0+20251107
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 53 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- BoardConfig @ 2.0.0
+|-- EInkDisplay @ 2.0.0
+|-- InputManager @ 2.0.0
+|-- SDCardManager @ 2.0.0
+|-- PowerManager @ 1.0.0
+|-- FreeInkUI @ 0.1.0
+|-- XteinkDetect @ 1.0.0
+|-- BleKeyboardHost @ 1.0.0
+|-- NimBLE-Arduino @ 2.5.0
+|-- Preferences @ 3.3.7
+|-- SPI @ 3.3.7
+Building in release mode
+Compiling .pio/build/default/src/Document.cpp.o
+Compiling .pio/build/default/src/main.cpp.o
+Compiling .pio/build/default/src/screens.cpp.o
+Linking .pio/build/default/firmware.elf
+                            Memory Type Usage Summary                             
+┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Memory Type/Section ┃ Used [bytes] ┃ Used [%] ┃ Remain [bytes] ┃ Total [bytes] ┃
+┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ Flash Code          │       548932 │          │                │               │
+│    .text            │       548932 │          │                │               │
+│ DRAM                │       205891 │    64.08 │         115405 │        321296 │
+│    .bss             │       106816 │    33.25 │                │               │
+│    .text            │        85498 │    26.61 │                │               │
+│    .data            │        13577 │     4.23 │                │               │
+│ Flash Data          │       125380 │          │                │               │
+│    .rodata          │       113688 │          │                │               │
+│    .eh_frame        │        11436 │          │                │               │
+│    .appdesc         │          256 │          │                │               │
+│ RTC SLOW            │           20 │     0.24 │           8172 │          8192 │
+│    .text            │           20 │     0.24 │                │               │
+└─────────────────────┴──────────────┴──────────┴────────────────┴───────────────┘
+Total image size: 773407 bytes (.bin may be padded larger)
+Note: The reported total sizes may be smaller than those in the technical reference manual due to reserved memory and application configuration. The total flash size available for the application is not included by default, as it cannot be reliably determined due to the presence of other data like the bootloader, partition table, and application partition size.
+Retrieving maximum program size .pio/build/default/firmware.elf
+Checking size .pio/build/default/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [====      ]  36.7% (used 120396 bytes from 327680 bytes)
+Flash: [=         ]  11.6% (used 761695 bytes from 6553600 bytes)
+Building .pio/build/default/firmware.bin
+esptool v5.1.2
+Creating ESP32C3 image...
+Merged 3 ELF sections.
+Successfully created ESP32C3 image.
+========================= [SUCCESS] Took 9.46 seconds =========================
+EXIT=0
