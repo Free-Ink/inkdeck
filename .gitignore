@@ -7,3 +7,4 @@
 # copy). The committed platformio.ini builds from the freeink-sdk submodule;
 # this file is per-developer and must not be committed.
 platformio.local.ini
+build.log
